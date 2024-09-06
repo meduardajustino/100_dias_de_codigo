@@ -17,7 +17,7 @@
     ```bash
     npm install
     ``` 
-    Ou, caso queira especificar a biblioteca (acabou rolando um erro similar comigo):
+    Ou, caso queira especificar a biblioteca:
     ```bash
     npm install prompt-sync
     ``` 
