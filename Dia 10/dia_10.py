@@ -3,9 +3,9 @@ import numpy as np
 
 # dados fictícios dos funcionários
 dados_funcionarios = {
-    'Nome': ['Ana', 'Bruno', 'Carlos', 'Daniela', 'Eduardo', 'Fernanda', 'Gustavo', 'Helena', 
+    'Nome': ['Ana', 'Bruno', 'Carlos', 'Daniela', 'Eduardo', 'Fernanda', 'Gustavo', 'Helena',
              'Igor', 'Juliana', 'Karen', 'Leonardo', 'Mariana', 'Natália', 'Otávio'],
-    'Departamento': ['TI', 'Financeiro', 'RH', 'TI', 'Marketing', 'Financeiro', 'TI', 
+    'Departamento': ['TI', 'Financeiro', 'RH', 'TI', 'Marketing', 'Financeiro', 'TI',
                      'RH', 'TI', 'Marketing', 'TI', 'Financeiro', 'Marketing', 'RH', 'TI'],
     'Salário': [4500, 5200, 4000, 4800, 4700, 5300, 4600, 4200, 4900, 4700, 5100, 5500, 4800, 4300, 5200]
 }
