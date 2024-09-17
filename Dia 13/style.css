@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.digital-clock {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +13,12 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.digital-clock {
-    font-size: 100px;
+#clock {
+    font-size: 48px;
     color: rgb(197, 160, 180); 
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     background-color: #363031;
-    padding: 20px;
+    padding: 20px 40px;
     border-radius: 10px;
     border: 5px solid #e6c9d6; 
 }
