@@ -9,7 +9,7 @@ body {
 }
 
 .clock {
-    font-size: 100px; /* Ajuste para um valor fixo para testes */
+    font-size: 100px; 
     color: #ffb6c1; 
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
