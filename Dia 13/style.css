@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5dc; 
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clock {
+    font-size: 100px; /* Ajuste para um valor fixo para testes */
+    color: #ffb6c1; 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock span {
+    display: inline-block;
+    padding: 0 10px;
+    animation: flip 1s infinite;
+}
+
+@keyframes flip {
+    0%, 100% { transform: rotateX(0); }
+    50% { transform: rotateX(180deg); }
+}
