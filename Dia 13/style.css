@@ -9,14 +9,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(197, 160, 180);
+    background-color: rgb(178, 143, 159);
     font-family: 'Courier New', Courier, monospace;
 }
 
 
 #clock {
     font-size: 48px;
-    color: rgb(197, 160, 180);
+    color: rgb(178, 143, 159);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     background-color: #363031;
     padding: 20px 40px;
@@ -32,7 +32,7 @@
         transform: rotateX(0deg);
     }
     50% {
-        transform: rotateX(180deg);
+        transform: rotateX(10deg);
     }
     100% {
         transform: rotateX(0deg);
