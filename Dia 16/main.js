@@ -11,7 +11,7 @@ const trocarSlide = (indice) => {
     slides[indice].classList.add('ativo'); // slide atual
     botoes[indice].classList.add('ativo'); // botão correspondente 
   
-    document.getElementById('imagens-carrossel').style.transform = translateX(-${indice * 600}px);
+    document.getElementById('imagens-carrossel').style.transform = `translateX(-${indice * 600}px)`;
 }
 
 const repetir = () => {
