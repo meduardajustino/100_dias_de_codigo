@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #efc9d1;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #be89a0;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .game-board {
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    border-spacing: 10px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #c882a2;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .cell:hover {
+    transform: scale(1.1);
+    background-color: #ffd1e8;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d18cab;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #c882a2;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container {
+    animation: fadeIn 1s ease;
+  }
+  
