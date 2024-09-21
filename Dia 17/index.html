@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 17 - Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">Gerador de senhas</h1>
+        
+        <div class="container-input">
+            <label for="slider">Tamanho da senha:</label>
+            <span id="tamanho-senha">15</span> caracteres
+            <input type="range" id="slider" min="5" max="25" value="15">
+        </div>
+
+        <button id="gerar-senha">gerar senha</button>
+
+        <div class="container-senha">
+            <span id="senha-gerada" class="senha">Sua senha aparecerá aqui.</span>
+            <button id="copiar-senha">clique para copiar a senha</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
