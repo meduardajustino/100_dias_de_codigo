@@ -1,0 +1,32 @@
+.contador-container {
+  text-align: center;
+  background-color: #eec9d3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contador-titulo {
+  font-family: 'Courier New', Courier, monospace;
+  color: #be7d94;
+}
+
+.contador-valor {
+  font-size: 2em;
+  color: #b84e73;
+}
+
+.contador-botao {
+  background-color: #be7d94;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contador-botao:hover {
+  background-color: #b84e73;
+}
