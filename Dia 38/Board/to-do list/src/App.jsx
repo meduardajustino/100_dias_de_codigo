@@ -1,11 +1,23 @@
-import React from "react";
-import Input from './components/input'
+import {React, useState} from "react";
+import Input from './components/input';
+
 function App() {
+  const [taskList, setTaskList] = useState([]);
+
+  console.log(taskList);
   return (
-      <>
+    <div className="flex flex-col items-center justify-center py-8 gap-4">
       <h1>TODO LIST @iemstudies</h1>
-        <Input/>
-      </>
+        <Input taskList={taskList} setTaskList={setTaskList}/>
+
+        <div>
+          {taskList.map((task, index) => (
+            <li key={index}>{task}</li>
+          ))}
+        </div>
+
+
+      </div>
   )
 }
 
