@@ -17,8 +17,8 @@ const Input = ({ taskList, setTaskList }) => {
             <form className="flex flex-row items-center gap-3">
                 <input 
                     type="text"
-                    className="border rounded-lg py-1.5 px-2.5"
-                    placeholder="Adicione uma tarefa"
+                    className="border rounded-lg py-1.5 px-5"
+                    placeholder="Digite os objetivos do dia"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                 />
@@ -26,7 +26,7 @@ const Input = ({ taskList, setTaskList }) => {
                     onClick={handleAddTask}
                     className="bg-pink-400 text-white py-2 px-3.5 rounded-lg font-semibold hover:opacity-70"
                 >
-                    Adicionar Tarefa
+                    Adicionar tarefa
                 </button>
             </form>
         </>

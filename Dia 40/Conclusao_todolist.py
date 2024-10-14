@@ -1,0 +1,1 @@
+print('Você pode conferir o resultado nos arquivos do dia 38 ou no meu repositório do github: https://github.com/meduardajustino/To-Do-List/')
