@@ -15,10 +15,10 @@ app.use(express.json());
 // criando rota para obter os dados da API
 app.get('/random-cats', async (req, res) => {
     // consome a api com axios
-    const response = await axios.get('https://api.thecatapi.com/v1/imagens/search', {
+    const response = await axios.get('https://api.thecatapi.com/v1/imagens/search?limit=7', {
         headers : {
             "x-api-key": api_key
-        },
+        }, // 7 fotos de gatos aleatórios
     });
     // exibindo a resposta da requisição
     res.json(response.data);
