@@ -1,0 +1,177 @@
+[
+    {
+      "id": 1,
+      "titulo": "Campeonato Brasileiro",
+      "categoria": "Brasileirão",
+      "ano": 1974
+    },
+    {
+      "id": 2,
+      "titulo": "Campeonato Brasileiro",
+      "categoria": "Brasileirão",
+      "ano": 1989
+    },
+    {
+      "id": 3,
+      "titulo": "Campeonato Brasileiro",
+      "categoria": "Brasileirão",
+      "ano": 1997
+    },
+    {
+      "id": 4,
+      "titulo": "Campeonato Brasileiro",
+      "categoria": "Brasileirão",
+      "ano": 2000
+    },
+    {
+      "id": 5,
+      "titulo": "Copa do Brasil",
+      "categoria": "Copa do Brasil",
+      "ano": 2011
+    },
+    {
+      "id": 6,
+      "titulo": "Copa Libertadores da América",
+      "categoria": "Libertadores",
+      "ano": 1998
+    },
+    {
+      "id": 7,
+      "titulo": "Copa Sul-Americana",
+      "categoria": "Copa Sul-Americana",
+      "ano": 2007
+    },
+    {
+      "id": 8,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1923
+    },
+    {
+      "id": 9,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1924
+    },
+    {
+      "id": 10,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1929
+    },
+    {
+      "id": 11,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1934
+    },
+    {
+      "id": 12,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1936
+    },
+    {
+      "id": 13,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1945
+    },
+    {
+      "id": 14,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1947
+    },
+    {
+      "id": 15,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1949
+    },
+    {
+      "id": 16,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1950
+    },
+    {
+      "id": 17,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1952
+    },
+    {
+      "id": 18,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1956
+    },
+    {
+      "id": 19,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1958
+    },
+    {
+      "id": 20,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1970
+    },
+    {
+      "id": 21,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1977
+    },
+    {
+      "id": 22,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1982
+    },
+    {
+      "id": 23,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1987
+    },
+    {
+      "id": 24,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1988
+    },
+    {
+      "id": 25,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1992
+    },
+    {
+      "id": 26,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1993
+    },
+    {
+      "id": 27,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1994
+    },
+    {
+      "id": 28,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 1998
+    },
+    {
+      "id": 29,
+      "titulo": "Campeonato Carioca",
+      "categoria": "Campeonato Carioca",
+      "ano": 2003
+    }
+  ]
+  
