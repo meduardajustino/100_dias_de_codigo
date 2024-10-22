@@ -2,12 +2,12 @@
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "hjs": "^0.0.6"
   },
   "name": "dia-46",
   "version": "1.0.0",
   "main": "src/index.js",
-
   "scripts": {
     "start": "nodemon src/index.js"
   },
