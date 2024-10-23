@@ -10,6 +10,13 @@ app.set('views', './views');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// Middleware global que será aplicado a todas as rotas
+app.use((req, res, next) => {
+  console.log("foi lançado um middleware");
+  console.log(`[${new Date().toISOString()}] ${req.method} request to ${req.url}`);
+  next();
+});
+
 // títulos do Vasco
 const titulos = require('./src/data/titles.json');
 const carregarTitulos = () => {
