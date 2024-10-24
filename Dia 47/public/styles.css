@@ -1,0 +1,88 @@
+/* Vibe Vasco da Gama */
+body.vasco-theme {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  .title {
+    font-size: 32px;
+    color: #E30613;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    color: #E30613;
+    font-weight: bold;
+  }
+  
+  .login-form {
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 18px;
+    color: #FFF;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #E30613;
+    border-radius: 5px;
+    background-color: #333;
+    color: #FFF;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #FFF;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #E30613;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .btn-submit:hover {
+    background-color: #C1050F;
+  }
+  
+  .welcome-message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #FFF;
+  }
+  
+  .logout-link {
+    color: #E30613;
+    text-decoration: none;
+  }
+  
+  .logout-link:hover {
+    text-decoration: underline;
+  }
+  
