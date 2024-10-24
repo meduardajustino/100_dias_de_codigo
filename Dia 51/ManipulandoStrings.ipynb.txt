@@ -1,0 +1,78 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Dia 51 - 100 dias de código\n",
+        "\n",
+        "### Utilizando python, escreva um programa que recebe uma frase do usuário e realiza a manipulação da string, realizando operações como contar o número de caracteres, inverter a string e imprimir cada palavra em uma linha"
+      ],
+      "metadata": {
+        "id": "pO08myfHoMxb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-ZtHyadmoFOm",
+        "outputId": "66237910-d6a4-449f-f0a1-acb9c13b57be"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite uma frase para analisarmos: ola, tudo bem\n",
+            "A frase possui 13 caracteres\n",
+            "A frase invertida fica: meb odut ,alo\n",
+            "As palavras da frase são: \n",
+            "ola,\n",
+            "tudo\n",
+            "bem\n",
+            "A frase possui 3 palavras\n",
+            "A frase possui 2 espaços\n",
+            "Digite a letra que você quer saber quantas vezes aparece na fraseo\n",
+            "A frase possui 2 letras o\n",
+            "A frase em letras maiúsculas fica: OLA, TUDO BEM\n",
+            "A frase em letras minúsculas fica: ola, tudo bem\n"
+          ]
+        }
+      ],
+      "source": [
+        "frase = input(\"Digite uma frase para analisarmos: \")\n",
+        "print(f'A frase possui {len(frase)} caracteres')\n",
+        "print(f'A frase invertida fica: {frase[::-1]}')\n",
+        "print(f'As palavras da frase são: ')\n",
+        "for i in frase.split():\n",
+        "  print(i)\n",
+        "\n",
+        "# manipulações bônus\n",
+        "print(f'A frase possui {len(frase.split())} palavras')\n",
+        "print(f'A frase possui {frase.count(\" \")} espaços')\n",
+        "letra = (input(\"Digite a letra que você quer saber quantas vezes aparece na frase: \")).lower()\n",
+        "\n",
+        "print(f'A frase possui {frase.count(letra)} letras {letra}')\n",
+        "print(f'A frase em letras maiúsculas fica: {frase.upper()}')\n",
+        "print(f'A frase em letras minúsculas fica: {frase.lower()}')\n"
+      ]
+    }
+  ]
+}
