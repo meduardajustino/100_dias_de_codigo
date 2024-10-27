@@ -1,9 +1,23 @@
-# 100 dias de código
-### Desafio de 100 dias de código da Codi Academy
+# Desafio de 100 Dias de Código da Codi Academy 💻👩‍💻👾
 
-## Instruções para Executar os Exercícios Localmente
+## Benefícios 🌟
 
-1. **Clonar o Repositório**
+Aqui está o que você pode esperar do desafio 100 Dias de Código:
+
+**🚀 Habilidades de codificação aprimoradas**  
+A prática consistente na programação permitirá que você desenvolva e fortaleça suas habilidades, tornando-se um profissional mais competente e preparado.
+
+**📁 Portfólio Sólido**  
+Um perfil ativo e repleto de contribuições no GitHub demonstra sua dedicação e conhecimento, atraindo a atenção de empregadores.
+
+**🌐 Networking**  
+Conecte-se com outros alunos e profissionais de programação para trocar conhecimentos, compartilhar experiências, ampliar sua rede e impulsionar seu crescimento na área.
+
+---
+
+## Instruções para Executar os Exercícios Localmente 🖥️
+
+1. **Clonar o Repositório**  
    ```bash
    git clone https://github.com/meduardajustino/100_dias_de_codigo.git
    ```
@@ -21,3 +35,6 @@
     ```bash
     npm install prompt-sync
     ``` 
+
+
+<p align="center">💜 Desafio aceito por Maria Eduarda Justino 💜</p>
