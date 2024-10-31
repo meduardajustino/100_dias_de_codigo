@@ -2,12 +2,14 @@ import pygame
 import sys
 
 pygame.init()
+pygame.font.init() 
 
 BEGE = (255, 228, 225)
 PRETO = (0, 0, 0)
 VERDE = (0, 255, 0)
 VERMELHO = (255, 0, 0)
 
+# dimensões da tela
 LARGURA = 600
 ALTURA = 600
 TAMANHO_LINHA = 15
@@ -22,6 +24,7 @@ jogador_atual = "X"
 vencedor = None
 jogo_ativo = True
 
+clock = pygame.time.Clock()
 
 def desenha_tabuleiro():
     tela.fill(BEGE)
@@ -72,16 +75,17 @@ def reiniciar_jogo():
     jogador_atual = "X"
     vencedor = None
     jogo_ativo = True
+    desenha_tabuleiro() 
 
 def exibe_resultado():
     fonte = pygame.font.Font(None, 100)
+    tela.fill(BEGE) 
     if vencedor == "Empate":
         texto = fonte.render("Empate!", True, VERMELHO)
     else:
         texto = fonte.render(f"{vencedor} venceu!", True, VERDE)
     tela.blit(texto, (LARGURA // 6, ALTURA // 3))
 
-# Loop principal do jogo
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -93,8 +97,8 @@ while True:
                 x, y = event.pos
                 linha = y // tamanho_quadrado
                 coluna = x // tamanho_quadrado
-
-                if tabuleiro[linha][coluna] is None:
+                
+                if 0 <= linha < LINHAS and 0 <= coluna < COLUNAS and tabuleiro[linha][coluna] is None:
                     tabuleiro[linha][coluna] = jogador_atual
                     desenha_simbolo(linha, coluna, jogador_atual)
                     verifica_vencedor()
@@ -110,8 +114,10 @@ while True:
             if tabuleiro[linha][coluna] is not None:
                 desenha_simbolo(linha, coluna, tabuleiro[linha][coluna])
 
-    # Exibe o vencedor se o jogo acabar
     if not jogo_ativo:
         exibe_resultado()
 
     pygame.display.update()
+    clock.tick(60)
+    
+
