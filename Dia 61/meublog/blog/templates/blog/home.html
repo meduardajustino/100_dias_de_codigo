@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog and studies</title>
+    <title>Blog and Studies</title>
 </head>
 <body>
     <h1>Posts</h1>
     {% for post in posts %}
         <div>
             <h2>{{ post.title }}</h2>
-            <p>{{post.content }}</p>
+            <p>{{ post.content }}</p>
             <small>{{ post.created_at }}</small>
         </div>
     {% endfor %}
+    
+    <h2>Dicas de Estudos</h2>
+    <p>Estudar de forma eficiente pode fazer uma grande diferença no seu aprendizado. Aqui estão algumas dicas para melhorar seus estudos:</p>
+    <ul>
+        <li>Crie um cronograma de estudos e siga-o rigorosamente.</li>
+        <li>Encontre um ambiente tranquilo e livre de distrações.</li>
+        <li>Faça pausas regulares para evitar a fadiga mental.</li>
+        <li>Utilize técnicas de memorização, como mapas mentais e flashcards.</li>
+        <li>Explique o conteúdo para outra pessoa para reforçar seu entendimento.</li>
+        <li>Durma bem e mantenha uma alimentação saudável.</li>
+    </ul>
 </body>
 </html>

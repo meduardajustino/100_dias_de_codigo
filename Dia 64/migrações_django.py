@@ -1,0 +1,1 @@
+# Para conferir o código do dia 64 - migrações no django veja o repositório do dia 61
