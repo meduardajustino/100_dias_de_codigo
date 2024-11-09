@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }}</title>
+</head>
+<body>
+    <header>
+        <h1>{{ post.title }}</h1>
+    </header>
+    <main>
+        <article>
+            <p>{{ post.content }}</p>
+            <footer>
+                <small>Publicado em: {{ post.created_at }}</small>
+            </footer>
+        </article>
+    </main>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Voltar para Home</a></li>
+            <!-- Adicione mais links de navegação aqui -->
+        </ul>
+    </nav>
+</body>
+</html>
