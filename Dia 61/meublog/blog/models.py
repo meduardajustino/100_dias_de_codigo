@@ -3,7 +3,7 @@ from django.utils import timezone
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
-    content = models.TextField
+    content = models.TextField(default="")
     created_at = models.DateTimeField(default=timezone.now)
     
     def __str__(self):
