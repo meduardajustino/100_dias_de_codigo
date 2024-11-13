@@ -15,6 +15,7 @@
             <small>{{ post.created_at }}</small>
         </div>
         <a href="{% url 'post_detail' post.id%}">View More</a>
+        <a href="{% url 'edit_post' post.id%}">Edit Post</a>
     {% endfor %}
     
     <h2>Dicas de Estudos</h2>
