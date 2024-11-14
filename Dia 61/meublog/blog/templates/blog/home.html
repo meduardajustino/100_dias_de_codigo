@@ -16,6 +16,7 @@
         </div>
         <a href="{% url 'post_detail' post.id%}">View More</a>
         <a href="{% url 'edit_post' post.id%}">Edit Post</a>
+        <a href="{% url 'delete_post' post.id%}">Delete</a>
     {% endfor %}
     
     <h2>Dicas de Estudos</h2>
