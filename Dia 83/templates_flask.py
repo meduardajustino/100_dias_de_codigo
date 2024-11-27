@@ -1,0 +1,1 @@
+print("Para conferir o script do dia de hoje clique na pasta do dia 81, desenvolverei o app nela.")
