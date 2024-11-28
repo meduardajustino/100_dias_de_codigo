@@ -6,7 +6,8 @@ app = Flask(__name__)
 # Rotas
 @app.route('/')
 def home():
-    return render_template('index.html')
+    titulo = "Home - I&M Studies 👩🏼‍💻🌸✨"
+    return render_template('index.html', titulo=titulo)
 
 @app.route('/to-do-list')
 def to_do_list():
@@ -18,7 +19,8 @@ def flip_clock():
 
 @app.route('/sobre')
 def pagina_sobre():
-    return render_template('about.html')
+    resumo = "No instagram você estará por dentro da minha rotina universitária, além de dicas para maximizar sua eficiência nos estudos."
+    return render_template('about.html', resumo = resumo)
 
 # Rodando o projeto
 if __name__ == '__main__':
