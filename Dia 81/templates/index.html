@@ -12,4 +12,16 @@
   <a class="btn btn-secondary btn-lg" href="/flip-clock" role="button">Flip Clock</a>
   <a class="btn btn-info btn-lg" href="/sobre" role="button">Sobre</a>
 </div>
+
+<div class = "container mt-5">
+  <h2> Algumas funcionalidades</h2>
+  <ul class="list-group">
+    {% for func in funcionalidades %}
+    <li class="list-group-item">
+      <strong>{{ func.nome }}</strong>: {{ func.descricao }}
+      <a href="{{ func.link }}" class="btn btn-link">Saiba mais</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 {% endblock %}

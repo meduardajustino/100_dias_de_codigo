@@ -7,7 +7,12 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     titulo = "Home - I&M Studies 👩🏼‍💻🌸✨"
-    return render_template('index.html', titulo=titulo)
+    funcionalidades = [
+        {"nome": "To-Do List", "descricao": "Gerencie suas tarefas.", "link": "/to-do-list"},
+        {"nome": "Flip Clock", "descricao": "Relógio vintage interativo.", "link": "/flip-clock"},
+        {"nome": "Sobre", "descricao": "Conheça mais sobre nós.", "link": "/sobre"}
+    ]
+    return render_template('index.html', titulo=titulo, funcionalidades=funcionalidades)
 
 @app.route('/to-do-list')
 def to_do_list():
