@@ -4,10 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f8e6e0;
+            color: #5a2a27;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff3f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #a86464;
+        }
+        form {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #a86464;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #a86464;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #944444;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #fce3e1;
+            border: 1px solid #a86464;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        a {
+            color: #a86464;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-    <header>
+    <div class="container">
         <h1>Minha Lista de Tarefas</h1>
-    </header>
-    
+        <form action="/add" method="POST">
+            <input type="text" name="tarefa" placeholder="Digite sua tarefa..." required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul>
+            {% for tarefa in tarefas %}
+                <li>
+                    <span style="text-decoration: {{ 'line-through' if tarefa.concluido else 'none' }};">
+                        {{ tarefa.tarefa }}
+                    </span>
+                    <div>
+                        <a href="/check/{{ loop.index0 }}">Concluir</a> |
+                        <a href="/edit/{{ loop.index0 }}">Editar</a> |
+                        <a href="/delete/{{ loop.index0 }}">Excluir</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
 </html>

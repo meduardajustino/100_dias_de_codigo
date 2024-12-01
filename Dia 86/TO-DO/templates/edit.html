@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Tarefa</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f8e6e0;
+            color: #5a2a27;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff3f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #a86464;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #a86464;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #a86464;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #944444;
+        }
+        a {
+            color: #a86464;
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Editar Tarefa</h1>
+        <form action="/edit/{{ index }}" method="POST">
+            <input type="text" name="tarefa" value="{{ tarefa.tarefa }}" required>
+            <button type="submit">Salvar</button>
+        </form>
+        <a href="/">Cancelar</a>
+    </div>
+</body>
+</html>
