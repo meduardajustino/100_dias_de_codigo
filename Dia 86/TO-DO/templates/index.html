@@ -72,23 +72,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Minha Lista de Tarefas</h1>
+        <h1>Lista de Tarefas</h1>
         <form action="/add" method="POST">
-            <input type="text" name="tarefa" placeholder="Digite sua tarefa..." required>
+            <input type="text" name="tarefa" placeholder="Nova tarefa..." required>
             <button type="submit">Adicionar</button>
         </form>
         <ul>
             {% for tarefa in tarefas %}
-                <li>
-                    <span style="text-decoration: {{ 'line-through' if tarefa.concluido else 'none' }};">
-                        {{ tarefa.tarefa }}
-                    </span>
-                    <div>
-                        <a href="/check/{{ loop.index0 }}">Concluir</a> |
-                        <a href="/edit/{{ loop.index0 }}">Editar</a> |
-                        <a href="/delete/{{ loop.index0 }}">Excluir</a>
-                    </div>
-                </li>
+            <li>
+                <span style="text-decoration: {{ 'line-through' if tarefa.concluido else 'none' }};">
+                    {{ tarefa.tarefa }}
+                </span>
+                <div>
+                    <a href="/check/{{ loop.index0 }}">Concluir</a> |
+                    <a href="/edit/{{ loop.index0 }}">Editar</a> |
+                    <a href="/delete/{{ loop.index0 }}">Excluir</a>
+                </div>
+            </li>
             {% endfor %}
         </ul>
     </div>
