@@ -56,8 +56,8 @@
 <body>
     <div class="container">
         <h1>Editar Tarefa</h1>
-        <form action="/edit/{{ index }}" method="POST">
-            <input type="text" name="tarefa" value="{{ tarefa.tarefa }}" required>
+        <form action="{{ url_for('edit', index=index) }}" method="POST">
+            <input type="text" name="tarefa" value="{{ tarefa['tarefa'] }}">
             <button type="submit">Salvar</button>
         </form>
         <a href="/">Cancelar</a>
