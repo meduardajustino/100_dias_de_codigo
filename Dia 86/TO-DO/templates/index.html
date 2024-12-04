@@ -6,68 +6,93 @@
     <title>Lista de Tarefas</title>
     <style>
         body {
-            font-family: "Arial", sans-serif;
-            background-color: #f8e6e0;
+            font-family: "Courier New", Courier, monospace;
+            background-color: #f4ece2;
             color: #5a2a27;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
+        
         .container {
             max-width: 600px;
             margin: 30px auto;
             padding: 20px;
-            background-color: #fff3f0;
+            background-color: #fffaf5;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #d9b8b4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        
         h1 {
             text-align: center;
             color: #a86464;
+            font-family: "Lucida Console", Monaco, monospace;
+            font-size: 24px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
+        
         form {
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
         }
+        
         input[type="text"] {
             flex: 1;
             padding: 10px;
             margin-right: 10px;
-            border: 1px solid #a86464;
+            border: 2px solid #d9b8b4;
             border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            background-color: #fefaf6;
+            color: #5a2a27;
         }
+        
         button {
             background-color: #a86464;
             color: #fff;
             padding: 10px 20px;
-            border: none;
+            border: 2px solid #d9b8b4;
             border-radius: 5px;
             cursor: pointer;
+            font-family: "Lucida Console", Monaco, monospace;
+            text-transform: uppercase;
         }
+        
         button:hover {
             background-color: #944444;
+            border-color: #bda8a5;
         }
+        
         ul {
             list-style: none;
             padding: 0;
         }
+        
         li {
             padding: 10px;
             margin-bottom: 10px;
             background-color: #fce3e1;
-            border: 1px solid #a86464;
+            border: 1px solid #d9b8b4;
             border-radius: 5px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-family: "Courier New", Courier, monospace;
         }
+        
         a {
             color: #a86464;
             text-decoration: none;
+            font-family: "Lucida Console", Monaco, monospace;
         }
+        
         a:hover {
             text-decoration: underline;
-        }
+            color: #944444;
+        }        
     </style>
 </head>
 <body>
