@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8e6e0; 
+  color: #5a2a27;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #f1d0c9;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  font-size: 3rem;
+  color: #a86464;
+}
+
+.App-header p {
+  font-size: 1.2rem;
+  color: #a86464;
+  margin-top: 10px;
+}
