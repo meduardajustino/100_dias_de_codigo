@@ -1,0 +1,109 @@
+body { 
+    font-family: Arial, sans-serif;
+    background-color: #ffeef7;
+    color: #555;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    color: #d88ac7;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  .produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .produto-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .produto-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .produto-card h2 {
+    margin-top: 0;
+    color: #d88ac7;
+    font-size: 1.5rem;
+  }
+  
+  .produto-card p {
+    margin: 8px 0;
+    color: #777;
+  }
+  
+  .produto-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #d88ac7;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #f3d9e4;
+    border-radius: 6px;
+    background-color: #fffafc;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #d88ac7;
+    box-shadow: 0 0 5px rgba(216, 138, 199, 0.4);
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #d88ac7;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #bf6cae;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(216, 138, 199, 0.5);
+  }
+  
